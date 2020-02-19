@@ -1,0 +1,7 @@
+- name: Install DVWA framework
+  hosts: localhost
+  connection: local
+  become: yes
+  roles:
+    - role: DVWA-ansible
+      action: install
